@@ -1,4 +1,4 @@
-@parabank
+@Parabank
 Feature: Parabank Banking website
 
   Parabank website - https://parabank.parasoft.com/parabank/index.htm
