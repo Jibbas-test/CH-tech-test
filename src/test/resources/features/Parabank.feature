@@ -14,12 +14,12 @@ Feature: Parabank Banking website
     Then I should see the following confirmation message "Your account was created successfully. You are now logged in."
 
   Scenario: Open a new savings account
-    Given I check the balance of Checking account is "$10000.00"
+    Given I check the balance of Checking account is "$1000.00"
     When I click on the Open New Account link
     And I select Savings and Open New Account
     And I click on the Accounts Overview link
-    Then The balance of the Checking Account is now "$9950.00"
-    And The balance of the Savings Account is "$50.00"
+    Then The balance of the Checking Account is now "$900.00"
+    And The balance of the Savings Account is "$100.00"
 
   Scenario: Error validation appears on Update Contact Info page
     Given I click on the Update Contact Info link

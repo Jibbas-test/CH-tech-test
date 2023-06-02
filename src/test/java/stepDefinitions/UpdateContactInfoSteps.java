@@ -79,13 +79,13 @@ public class UpdateContactInfoSteps {
         Thread.sleep(2000);
         updateContactInfoPage.clickContactInfoUpdateLink();
         Thread.sleep(2000);
-        assertTrue(updateContactInfoPage.updateFirstName.getText().contains("New First Name"));
-        assertTrue(updateContactInfoPage.updateLastName.getText().contains("New Last Name"));
-        assertTrue(updateContactInfoPage.updateStreetAddress.getText().contains("New Street Address"));
-        assertTrue(updateContactInfoPage.updateCity.getText().contains("New City"));
-        assertTrue(updateContactInfoPage.updateState.getText().contains("New State"));
-        assertTrue(updateContactInfoPage.updateZipCode.getText().contains("New Zip Code"));
-        assertTrue(updateContactInfoPage.updatePhoneNumber.getText().contains("10987654321"));
+        assertTrue(updateContactInfoPage.updateFirstName.getAttribute("value").contains("New First Name"));
+        assertTrue(updateContactInfoPage.updateLastName.getAttribute("value").contains("New Last Name"));
+        assertTrue(updateContactInfoPage.updateStreetAddress.getAttribute("value").contains("New Street Address"));
+        assertTrue(updateContactInfoPage.updateCity.getAttribute("value").contains("New City"));
+        assertTrue(updateContactInfoPage.updateState.getAttribute("value").contains("New State"));
+        assertTrue(updateContactInfoPage.updateZipCode.getAttribute("value").contains("New Zip Code"));
+        assertTrue(updateContactInfoPage.updatePhoneNumber.getAttribute("value").contains("10987654321"));
     }
 
 }
