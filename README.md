@@ -9,6 +9,16 @@ Please ensure that the following are installed before attempting to clone this r
 * Maven
 * Chromedriver
 
+## Configuring ChromeDriver
+
+Currently, this project is setup to look for a ChromeDriver location through the System Property of:
+>webdriver.chrome.driver 
+
+If the system property is not set, it is set to:
+>"/usr/local/bin/chromedriver"
+
+If you would like to set the location yourself, set the system property or edit the variable `webDriverLocation` which can be found inside the class `WebDriverUtil`
+
 ## Running the tests
 
 * Clone this repository on your local machine using the following command(s):
