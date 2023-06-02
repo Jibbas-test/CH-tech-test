@@ -1,0 +1,7 @@
+# Mac OS Files
+.DS_Store
+.idea
+
+# Project Files
+target/
+test-output/
