@@ -9,7 +9,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import pages.AccountPage;
-import utilities.SeleniumUtil;
+import utilities.WebDriverUtil;
 
 import static org.junit.Assert.assertTrue;
 
@@ -19,7 +19,7 @@ public class AccountPageSteps {
     private AccountPage accountPage;
 
     public AccountPageSteps() {
-        driver = SeleniumUtil.getWebDriver();
+        driver = WebDriverUtil.getWebDriver();
         accountPage = new AccountPage(driver);
     }
 

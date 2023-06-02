@@ -10,7 +10,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import pages.RegisterPage;
-import utilities.SeleniumUtil;
+import utilities.WebDriverUtil;
 
 import static org.junit.Assert.assertTrue;
 
@@ -20,7 +20,7 @@ public class RegistrationPageSteps {
     private RegisterPage registerPage;
 
     public RegistrationPageSteps() {
-        driver = SeleniumUtil.getWebDriver();
+        driver = WebDriverUtil.getWebDriver();
         registerPage = new RegisterPage(driver);
     }
 

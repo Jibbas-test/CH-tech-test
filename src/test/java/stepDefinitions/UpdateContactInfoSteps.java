@@ -7,7 +7,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import pages.HomePage;
 import pages.UpdateContactInfoPage;
-import utilities.SeleniumUtil;
+import utilities.WebDriverUtil;
 
 import static org.junit.Assert.assertTrue;
 
@@ -18,7 +18,7 @@ public class UpdateContactInfoSteps {
     private HomePage homePage;
 
     public UpdateContactInfoSteps() {
-        driver = SeleniumUtil.getWebDriver();
+        driver = WebDriverUtil.getWebDriver();
         updateContactInfoPage = new UpdateContactInfoPage(driver);
         homePage = new HomePage(driver);
     }

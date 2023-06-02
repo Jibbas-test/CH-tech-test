@@ -12,7 +12,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import pages.HomePage;
 import pages.UpdateContactInfoPage;
-import utilities.SeleniumUtil;
+import utilities.WebDriverUtil;
 
 public class HomePageSteps {
 
@@ -22,7 +22,7 @@ public class HomePageSteps {
 
 
     public HomePageSteps() {
-        driver = SeleniumUtil.getWebDriver();
+        driver = WebDriverUtil.getWebDriver();
         homePage = new HomePage(driver);
         updateContactInfoPage = new UpdateContactInfoPage(driver);
     }
